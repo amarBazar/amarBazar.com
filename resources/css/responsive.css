@@ -1,0 +1,208 @@
+/* max width 1200px */
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 57.5%;
+    }
+}
+/* max width 1024px */
+@media only screen and (max-width: 1024px) {
+    .nav-menu ul {
+        gap: 1.5rem;
+    }
+    .main-offer-items-box {
+        width: 77%;
+    }
+    .footer-title {
+        font-size: 2rem;
+    }
+    .links {
+        font-size: 1.5rem;
+    }
+}
+/* max width 980px */
+@media only screen and (max-width: 980px) {
+    .row {
+        padding: 0 5.375%;
+    }
+    .main-offer-items-box {
+        &::after {
+            display: none;
+        }
+    }
+    .new-arrival {
+        .row {
+            &:nth-child(2) {
+                padding: 6rem 5.375%;
+            }
+        }
+    }
+    .product {
+        width: 32.26%;
+        flex-grow: 0;
+    }
+}
+/* max width 768px */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .small-devide-search-box {
+        display: flex;
+    }
+    .all-device-search-box {
+        display: none;
+    }
+    .side-menu {
+        display: block;
+    }
+    #sideMenu {
+        width: 30%;
+    }
+    .items-category-box {
+        display: none;
+    }
+    .main-offer-items-box {
+        width: 100%;
+        &::after {
+            display: none;
+        }
+    }
+    .items-one {
+        width: 100%;
+    }
+    .items-box {
+        width: 100%;
+    }
+    .terms-and-condition-box .condition-title {
+        font-size: 1.8rem;
+    }
+    .footer-title {
+        font-size: 1.5rem;
+    }
+    .links {
+        font-size: 1.2rem;
+    }
+    .product-details-row .images-side {
+        width: 49.2%;
+        flex-direction: column-reverse;
+        gap: 1.6rem;
+    }
+    .images-side .collection-image {
+        width: 100%;
+        flex-direction: row;
+    }
+    .images-side .main-image {
+        width: 100%;
+        height: 40rem;
+    }
+    .collection-image .collection-image-box {
+        height: 9.3rem;
+    }
+    .product-details-row .details-side {
+        width: 49.2%;
+    }
+    #full-product-description {
+        width: 70%;
+    }
+    .billing-row .form-side {
+        width: 47.2%;
+    }
+    .billing-side {
+        width: 47.2%;
+    }
+    #payment {
+        width: 70%;
+    }
+}
+/* max width 620px */
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 55.5%;
+    }
+    .top-nav-frame {
+        font-size: 1.3rem;
+    }
+    .small-devide-search-box {
+        display: none;
+    }
+    .all-device-search-box {
+        display: flex;
+    }
+    .all-device-search-box input{
+        display: none;
+    }
+    .search-box {
+        width: 100%;
+        background: transparent;
+        display: none;
+    }
+
+}
+/* max width 480px */
+@media only screen and (max-width: 480px) {
+    .top-nav {
+        display: none;
+    }
+    #sideMenu {
+        width: 50%;
+    }
+    .main-offer-items-box {
+        height: 25.4rem;
+    }
+    .image-side .details-side a {
+        display: block;
+        margin-top: 3rem;
+    }
+    .image-side .details-side {
+        padding: 1.5rem 3rem;
+    }
+    .product {
+        width: 49.2%;
+    }
+    .category-box .category-tiems {
+        width: 32.26%;
+    }
+    .special-product-box {
+        height: 25.4rem;
+    }
+    .special-product-box .details-box {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        gap: 2.5rem;
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    .terms-and-condition-box .condition-title {
+        font-size: 1.6rem;
+    }
+    .product-details .product-details-row {
+        flex-direction: column;
+        gap: 2.2rem;
+    }
+    .product-details-row .images-side {
+        width: 100%;
+    }
+    .collection-image .collection-image-box {
+        width: 80%;
+    }
+    .product-details-row .details-side {
+        width: 100%;
+    }
+    #full-product-description {
+        width: 80%;
+    }
+    .billing-row {
+        flex-direction: column;
+        gap: 2.2rem;
+    }
+    .billing-row .form-side {
+        width: 100%;
+    }
+    .billing-side {
+        width: 100%;
+    }
+    #payment {
+        width: 80%;
+    }
+}

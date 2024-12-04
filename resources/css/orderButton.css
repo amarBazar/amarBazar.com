@@ -1,0 +1,71 @@
+button {
+    position: relative;
+    overflow: hidden;
+    width: 7rem;
+    color: #5585ff;
+    border: 2px solid #5585ff;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    border-radius: 1.5rem;
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    outline: none;
+    transition: transform 0.125s;
+  }
+  button:active {
+    transform: scale(0.9, 0.9);
+  }
+  button:before, button:after {
+    position: absolute;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.125rem;
+    margin-left: -1.125rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    content: "";
+    z-index: 1;
+  }
+  button.loading {
+    animation: button-loading 0.5s forwards;
+  }
+  button.loading:before {
+    opacity: 1;
+    animation: button-dot-intro 0.5s forwards;
+  }
+  button.loading:after {
+    opacity: 0;
+    animation: button-dot-pulse 1.5s infinite 0.5s;
+  }
+  button.ready {
+    text-indent: 0;
+    color: transparent;
+    background-color: #5585ff;
+    animation: button-ready 0.333s forwards;
+  }
+  button.ready:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    margin: 0;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    color: #8cce1e;
+    content: "ready";
+    opacity: 0;
+    z-index: 2;
+    animation: button-ready-label 0.5s forwards 0.275s;
+  }
+  button.ready:after {
+    opacity: 1;
+    animation: button-dot-outro 0.333s;
+  }
